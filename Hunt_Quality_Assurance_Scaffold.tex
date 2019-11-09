@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{array}
 \usepackage[landscape]{geometry}
+\usepackage{amssymb}
 
 \title{table test}
 \author{emily.hunt }
@@ -13,44 +14,68 @@
 
 % This design for this table was based off the tesing process used for FAIMS which we were shown in class.
 % Used template from https://www.overleaf.com/learn/latex/Tables
+% For checkmark: https://tex.stackexchange.com/questions/132783/how-to-write-checkmark-in-latex
 
-\begin{tabular}{ | m{0.4cm} | m{3.5cm} | m{4cm}| m{4cm} | m{2
-cm} | m{3.5cm} | } 
+\textbf{oTranscribe Tests}
+
+\begin{tabular}{ | m{0.4cm} | m{3.5cm} | m{6cm}| m{4cm} | m{1.5cm} | m{3cm} | } 
 \hline
-No. & PRECONDITIONS & TEST STEPS & EXPECTED RESULTS & RESULT (Success or Failure) & COMMENTS\\ 
+No. & PRECONDITIONS & TEST STEPS & EXPECTED RESULTS & RESULT (\checkmark or x) & COMMENTS\\ 
 \hline
-1 & Have https://mq-foar705.github.io/Hunt-Exercises/ open in a web browser & Select the link to oTranscribe & Have the oTranscribe web application homepage open & cell4 & cell 5 \\ 
+1 & Have https://mq-foar705.github.io/Hunt-Exercises/ open in a web browser & Select the link for the oTranscribe notes template. In the GitHub page that should open, select the green 'Clone or download' button and select Download zip & The zip file should download and be able to be unzipped to retrieve the oTranscribe format file &  & \\ 
 \hline
-2 & cell1 dummy text dummy text dummy text& cell2 & cell3 & cell4 & cell 5 \\ 
+2 & Have https://mq-foar705.github.io/Hunt-Exercises/ open in a web browser & Select the link to oTranscribe & Have the oTranscribe web application homepage open &  &  \\ 
 \hline
-3 & This is a test I just want to see how a large amount of text prints & cell2 & cell3 & cell4 & cell 5 \\ 
+3 & Test 2 & In the oTranscribe web application select the blue ‘Start transcribing’ button & The oTranscribe notetaking page should open (which includes buttons to select a video and an area to enter text) &  &  \\ 
 \hline
-4 & cell1 dummy text dummy text dummy text& cell2 & cell3 & cell4 & cell 5 \\ 
-\hline
-5 & This is a test I just want to see how a large amount of text prints & cell2 & cell3 & cell4 & cell 5 \\ 
-\hline
-6 & cell1 dummy text dummy text dummy text& cell2 & cell3 & cell4 & cell 5 \\ 
-\hline
-7 & This is a test I just want to see how a large amount of text prints & cell2 & cell3 & cell4 & cell 5 \\ 
-\hline
-8 & cell1 dummy text dummy text dummy text& cell2 & cell3 & cell4 & cell 5 \\ 
-\hline
-9 & This is a test I just want to see how a large amount of text prints & cell2 & cell3 & cell4 & cell 5 \\ 
-\hline 
-10 & cell1 dummy text dummy text dummy text& cell2 & cell3 & cell4 & cell 5 \\ 
-\hline
-11 & This is a test I just want to see how a large amount of text prints & cell2 & cell3 & cell4 & cell 5 \\ 
-\hline
-12 & cell1 dummy text dummy text dummy text& cell2 & cell3 & cell4 & cell 5 \\ 
+4 & Tests 2 and 3 & In the oTranscribe notetaking page, select the blue button with an upward arrow and the text ‘Choose audio (or video) file’, navigate to the video file you wish to take notes on, select the file and select ‘Open’ (This file should be in an appropriate format for the browser you are using the application in) & The video file should open in a window in the top left hand corner of the page &  & \\ 
 \hline
 \end{tabular}
 
 \pagebreak
 
+\begin{tabular}{ | m{0.4cm} | m{3.5cm} | m{6cm}| m{4cm} | m{1.5cm} | m{3cm} | } 
+\hline
+No. & PRECONDITIONS & TEST STEPS & EXPECTED RESULTS & RESULT (\checkmark or x) & COMMENTS\\ 
+\hline
+5 & Tests 2 and 3 & In the note taking page, select the blue button with the text ‘or YouTube video’, enter a working YouTube link, press your ‘enter’ key & The video should open in a window in the top left hand corner of the page &  & \\ 
+\hline
+6 & Test 1-3 & In the note taking page, click the Upload icon on the right hand side of the note taking page. Navigate to where the notes template downloaded in test 1 is saved on your computer, select it and click 'Open' & The contents of the template should successfully appear in the text area of the notetaking page & &\\ 
+\hline
+7 & Test 1-3, 4 OR 5, and 6 & In the note taking page, click the play icon on the video window to play the video then the click the pause icon to pause it (or alternatively press the escape key on your keyboard). To add a note for this timestamp press the command and 'j' keys on your keyboard at the same time & The video should play and pause when you use either of the two approaches. A timestamp should appear in blue in the text entry space &  &  \\ 
+\hline
+8 & Test 1-3, 4 OR 5, 6 and 7 & In the note taking page, place the text cursor on one of the lines of notes. Press the command and 'k' keys on your keyboard at the same time. & A pop up should open saying ‘Jump to time’ with the timestamp of the note the text cursor is in. Pressing the enter key should take you to that time in the video. &  &  \\ 
+\hline
+9 & Tests 1-3, 4 OR 5, 6 and 7 & In the note taking page, click any of the timestamps in the notes & This should take you to that time in the video. &  &  \\ 
+\hline
+10 & Tests 1-3, 4 OR 5 and 6 & In the note taking page, click on the cog icon in the page’s menu bar & Using any of the shortcuts listed in the note taking page should produced the intended result &  &  \\ 
+\hline
+\end{tabular}
 
+\pagebreak
 
+\begin{tabular}{ | m{0.4cm} | m{3.5cm} | m{6cm}| m{4cm} | m{1.5cm} | m{3cm} | } 
+\hline
+No. & PRECONDITIONS & TEST STEPS & EXPECTED RESULTS & RESULT (\checkmark or x) & COMMENTS\\ 
+\hline
+11 & Tests 1-3, 4 OR 5 and 6-7 & In the note taking page, select the Export icon on the right hand side of the page and select 'plain text (.txt)' & A text file named ‘Transcript exported Day, Date Time GMT.txt’ (e.g.Transcript exported Sat, 09 Nov 2019 00\textunderscore 05\textunderscore 11 GMT.txt) should download to your computer &  & \\ 
+\hline
+12 & Tests 1-3, 4 OR 5 and 6-7 & In the note taking page, select the Export icon on the right hand side of the page and select 'oTranscribe format (.otr)' & A text file named ‘Transcript exported Day, Date Time GMT.otr’ (e.g.Transcript exported Sat, 09 Nov 2019 00\textunderscore 05\textunderscore 11 GMT.otr) should download to your computer &  &\\ 
+\hline
+13 & Test 2-3, 12 & In the note taking page, click the Upload icon on the right hand side of the note taking page. Navigate to where the .otr notes file downloaded in test 12 is saved on your computer, select it and click 'Open' & The contents of the file should successfully appear in the text area of the notetaking page &  &  \\ 
+\hline
+\end{tabular}
 
+\pagebreak
 
+\textbf{Unix Script Tests}
 
+\begin{tabular}{ | m{0.4cm} | m{3.5cm} | m{6cm}| m{4cm} | m{1.5cm} | m{3cm} | } 
+\hline
+No. & PRECONDITIONS & TEST STEPS & EXPECTED RESULTS & RESULT (\checkmark or x) & COMMENTS\\ 
+\hline
+1 & Have my Hunt\textunderscore FOAR705\textunderscore Proof\textunderscore Of\textunderscore Concept code ocean capsule open in a web browser after it has been shared with you & Click the blue Reproducible Run button in the top right hand corner of the page & In the run tab that opens at the bottom of the page, ok should be printed in front of the two tests. The timeline should should display the production of eight text files. When each one is clicked on, the relevant notes featuring the keyterm in the files name should be included & & \\ 
+\hline
+\end{tabular}
 
 \end{document}
