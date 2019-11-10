@@ -4,8 +4,8 @@
 \usepackage[landscape]{geometry}
 \usepackage{amssymb}
 
-\title{table test}
-\author{emily.hunt }
+\title{\textbf{Proof of Concept Quality Assurance Tests}}
+\author{Emily Hunt}
 \date{November 2019}
 
 \begin{document}
@@ -48,7 +48,7 @@ No. & PRECONDITIONS & TEST STEPS & EXPECTED RESULTS & RESULT (\checkmark or x) &
 \hline
 9 & Tests 1-3, 4 OR 5, 6 and 7 & In the note taking page, click any of the timestamps in the notes & This should take you to that time in the video. &  &  \\ 
 \hline
-10 & Tests 1-3, 4 OR 5 and 6 & In the note taking page, click on the cog icon in the page’s menu bar & Using any of the shortcuts listed in the note taking page should produced the intended result &  &  \\ 
+10 & Tests 1-3, 4 OR 5 and 6 & In the note taking page, click on the cog icon in the page’s menu bar and try each of the shortcuts listed here to navigate through the video & Each of the shortcuts should work as intended &  &  \\ 
 \hline
 \end{tabular}
 
@@ -58,9 +58,9 @@ No. & PRECONDITIONS & TEST STEPS & EXPECTED RESULTS & RESULT (\checkmark or x) &
 \hline
 No. & PRECONDITIONS & TEST STEPS & EXPECTED RESULTS & RESULT (\checkmark or x) & COMMENTS\\ 
 \hline
-11 & Tests 1-3, 4 OR 5 and 6-7 & In the note taking page, select the Export icon on the right hand side of the page and select 'plain text (.txt)' & A text file named ‘Transcript exported Day, Date Time GMT.txt’ (e.g.Transcript exported Sat, 09 Nov 2019 00\textunderscore 05\textunderscore 11 GMT.txt) should download to your computer &  & \\ 
+11 & Tests 1-3, 4 OR 5 and 6-7 & In the note taking page, select the Export icon on the right hand side of the page and select 'plain text (.txt)' & A text file named ‘Transcript exported Day, Date Time GMT.txt’ ('e.g.Transcript exported Sat, 09 Nov 2019 00\textunderscore 05\textunderscore 11 GMT.txt') should download to your computer &  & \\ 
 \hline
-12 & Tests 1-3, 4 OR 5 and 6-7 & In the note taking page, select the Export icon on the right hand side of the page and select 'oTranscribe format (.otr)' & A text file named ‘Transcript exported Day, Date Time GMT.otr’ (e.g.Transcript exported Sat, 09 Nov 2019 00\textunderscore 05\textunderscore 11 GMT.otr) should download to your computer &  &\\ 
+12 & Tests 1-3, 4 OR 5 and 6-7 & In the note taking page, select the Export icon on the right hand side of the page and select 'oTranscribe format (.otr)' & A text file named ‘Transcript exported Day, Date Time GMT.otr’ (e.g.'Transcript exported Sat, 09 Nov 2019 00\textunderscore 05\textunderscore 11 GMT.otr') should download to your computer &  &\\ 
 \hline
 13 & Test 2-3, 12 & In the note taking page, click the Upload icon on the right hand side of the note taking page. Navigate to where the .otr notes file downloaded in test 12 is saved on your computer, select it and click 'Open' & The contents of the file should successfully appear in the text area of the notetaking page &  &  \\ 
 \hline
@@ -74,7 +74,41 @@ No. & PRECONDITIONS & TEST STEPS & EXPECTED RESULTS & RESULT (\checkmark or x) &
 \hline
 No. & PRECONDITIONS & TEST STEPS & EXPECTED RESULTS & RESULT (\checkmark or x) & COMMENTS\\ 
 \hline
-1 & Have my Hunt\textunderscore FOAR705\textunderscore Proof\textunderscore Of\textunderscore Concept code ocean capsule open in a web browser after it has been shared with you & Click the blue Reproducible Run button in the top right hand corner of the page & In the run tab that opens at the bottom of the page, ok should be printed in front of the two tests. The timeline should should display the production of eight text files. When each one is clicked on, the relevant notes featuring the keyterm in the files name should be included & & \\ 
+1 & Have my Hunt\textunderscore FOAR705\textunderscore Proof\textunderscore 
+
+Of\textunderscore Concept code ocean capsule open in a web browser after it has been shared with you & Click the blue Reproducible Run button in the top right hand corner of the page & In the run tab that opens at the bottom of the page, ok should be printed in front of the two tests. The timeline should should display the production of eight text files. When each one is clicked on, the relevant notes featuring the keyterm in the files name should be included & & \\ 
+\hline
+\end{tabular}
+
+OR
+
+\begin{tabular}{ | m{0.4cm} | m{3.5cm} | m{6cm}| m{4cm} | m{1.5cm} | m{3cm} | } 
+\hline
+No. & PRECONDITIONS & TEST STEPS & EXPECTED RESULTS & RESULT (\checkmark or x) & COMMENTS\\ 
+\hline
+2 & Have completed steps 1-6 of the Unix Script deployment instructions at https://github.com/
+
+MQ-FOAR705/Hunt-Exercises/blob/master/
+
+README.md & In the unix shell, make the main folder (which you named the film the notes were on) the working directory. Enter '/the direct path to where you have the bat-core folder/bats-core/bin/bat code/test.bats' & The response printed by the shell should include the name of the test with a tick mark and '1 test, 0 failures' & & \\ 
+\hline
+3 & Have completed steps 1-6 of the Unix Script deployment instructions at https://github.com/
+
+MQ-FOAR705/Hunt-Exercises/blob/master/
+
+README.md and test 2 & With the same working directory as in test 2, enter in the unix shell 'bash code/organise\textunderscore notes.sh data/name\textunderscore of\textunderscore your\textunderscore notes\textunderscore file.txt' & Eight files with called camera.txt, character.txt, colour.txt, editing.txt, lighting.txt, narrative.txt, sound.txt and theme.txt should appear in the sorted\textunderscore notes folder. These files such contain the notes appropriate to their filename & & \\ 
+\hline
+\end{tabular}
+
+\pagebreak
+
+\begin{tabular}{ | m{0.4cm} | m{3.5cm} | m{6cm}| m{4cm} | m{1.5cm} | m{3cm} | } 
+\hline
+4 & Have completed steps 1-6 of the Unix Script deployment instructions at https://github.com/
+
+MQ-FOAR705/Hunt-Exercises/blob/master/
+
+README.md and tests 2-3 & With the main folder still as the working directory, enter in the unix shell '/the direct path to where you have the bat-core folder/bats-core/bin/bat code/test2.bats' & The response printed by the shell should include the name of the test with a tick mark and '1 test, 0 failures' & & \\ 
 \hline
 \end{tabular}
 
